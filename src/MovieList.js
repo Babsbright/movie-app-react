@@ -8,7 +8,7 @@ const MovieList = () => {
    
     //SEARCH
     const [search, setSearch] = useState('')
-    const [query, setQuery] = useState('game')
+    const [query, setQuery] = useState('money')
     useEffect(() => {
     getMovies()
     }, [query])
