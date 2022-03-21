@@ -8,7 +8,7 @@ const MovieList = () => {
    
     //SEARCH
     const [search, setSearch] = useState('')
-    const [query, setQuery] = useState('series')
+    const [query, setQuery] = useState('game')
     useEffect(() => {
     getMovies()
     }, [query])
@@ -16,7 +16,7 @@ const MovieList = () => {
 //FUNCTIONS(get movies)
     const getMovies = async () => {
       try {
-         const response = await fetch(`https://www.omdbapi.com/?apikey=a7a37b5e&s=${query}&plot=full`)
+         const response = await fetch(`https://www.omdbapi.com/?apikey=a7a37b5e&s=${query}&plot=short`)
          const data = await response.json()
       setMovies(data.Search)
       } 

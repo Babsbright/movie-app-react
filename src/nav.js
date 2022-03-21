@@ -12,7 +12,7 @@ return(
     <nav>
         <h4>Hi, Welcome!</h4>
         <ul className='nav-links'>
-        <Link style={navStyle} to='/movieList'><li>Favorites <i className='fas fa-heart'></i> </li> </Link>
+        <Link style={navStyle} to='/favorite'><li>Favorites <i className='fas fa-heart'></i> </li> </Link>
         </ul>
     </nav>
 )

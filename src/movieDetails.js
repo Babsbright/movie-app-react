@@ -18,8 +18,10 @@ const Item = () => {
         setDetails(response)
     }
         return(
+
+            
             <div className={style.movie}>
-                
+                <h5 className ={style.detail}>Movie Details</h5>
                 <img className={style.image} src={details.Poster} alt={details.Title}/>
                 <h2 className={style.title}>{details.Title}</h2>
                 <h4 className={style.genre}>{details.Genre}</h4>
