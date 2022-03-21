@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #03153a;
+}
+.App {
+  margin: 20px;
+  text-align: center;
+  background-color: #03153a;
+  border-radius: 30px;
+  font-family: 'Comic Neue', cursive;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+   /* margin-top: 20px; */
+  color: white;
+}
+nav h4{
+  font-size: 18px;
+}
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+/* input */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  color: white;
+  display: flex;
+  padding: 2px;
+  border-radius: 20px;
+  width: 210px;
+  border: 1px solid #162544;
+  margin: 0 0 30px;
+}
+
+.search-bar{
+  border: none;
+  background: transparent;
+  margin: 0;
+  width: 200px;
+  padding: 4px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  outline: none;
+}
+
+.search-button{
+  
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  
+}
+.fa-search{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #0466c8;
+ 
+}
+
+/* movie */
+
+.movie{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.movie-img{
+  height: 50vh;
+  width: 30vh;
+  border-radius: 20px;
+  margin: 10px 0px 10px 0px;
+}
+.movie-title{
+  font-size: 15px;
+  color: white!important;
+  text-decoration: none;
+  width: 140px!important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+.movie-year{
+  font-size: 15px;
+  color: #b0b5bf;
+}
+.fa-heart{
+  
+  color: #0466c8;
+}
+
+
+
+
+
+
+
