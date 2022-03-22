@@ -5,14 +5,19 @@ const Nav = () => {
 const navStyle = {
     color:'white',
     textDecoration: 'none',
-    marginTop:'40px',
 
 }
 return(
     <nav>
-        <h4>Hi, Welcome!</h4>
+        <h4><i className='fas fa-film'></i> Utopia</h4>
         <ul className='nav-links'>
-        <Link style={navStyle} to='/favorite'><li>Favorites <i className='fas fa-heart'></i> </li> </Link>
+        <Link style={navStyle} to='/favorite'><li><i className='fas fa-heart-circle-check'></i> </li> </Link>
+        
+        <li><i className='fas fa-envelope'></i> </li>
+        
+        <li><i className='fas fa-user'></i> </li>
+        
+        
         </ul>
     </nav>
 )

@@ -1,14 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
+import style from './movie.module.css'
 
-const Favorite = () =>{
-    return(
-        <div>
-            <h2 className="favorite">Work In Progress
-           <br />
-            Check Back!
-            </h2>
-        </div>
-    )
+
+const Favorite = ({poster, title, type, year, movieId}) => {
+    {console.log({title})}
+   return(     
+            <div>
+                
+           <h3 className='favorite'>Work in progress</h3>
+            </div>
+        )
+
+
 }
 
-export default Favorite
+export default Favorite;

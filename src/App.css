@@ -7,7 +7,7 @@ body{
   background-color: #03153a;
 }
 .App {
-  margin: 20px;
+  
   text-align: center;
   background-color: #03153a;
   border-radius: 30px;
@@ -17,21 +17,31 @@ body{
 
 nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-   /* margin-top: 20px; */
+
   color: white;
+  /* background: #0466c8; */
+  height: 50px;
+  border-radius: 0px;
+  margin: 10px 0px 15px 0px;
 }
 nav h4{
-  font-size: 18px;
+  font-size: 15px;
+  color: #e7e7e7;
 }
 .nav-links{
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+ 
+display: flex;
+flex-direction: row;
+justify-content: space-around;
   list-style-type: none;
 }
+nav li{
+font-size: 14px;
+margin: 0px 9px;
+}
+
 
 /* input */
 .container {
@@ -111,13 +121,31 @@ form {
   font-size: 15px;
   color: #b0b5bf;
 }
+.fav{
+background: transparent;
+border: none;
+}
+.favorite{
+color: white;
+}
 .fa-heart{
   
+  color: #b0b5bf;
+}
+
+.fa-heart-circle-plus{
+  color: #d5dde6;
+}
+.fa-heart-circle-check{
   color: #0466c8;
 }
 
-.favorite{
-  color: white;
+.fa-film, .fa-envelope, .fa-user{
+  color: #0466c8;
+}
+.fa-film{
+  margin-left: 20px;
+  font-size: 25px;
 }
 
 

@@ -4,6 +4,7 @@ import Nav from './nav';
 import Item from './movieDetails';
 import MovieList from './MovieList';
 import Favorite from './favorite';
+import Error from './error';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 <Routes>
    <Route path='/' element ={<MovieList  />} />
    <Route path='/favorite' element ={<Favorite />} />
+   <Route path='/error' element ={<Error />} />
    <Route path='/movieList/:id' element= {<Item />}/>
   </Routes>
 </div>
