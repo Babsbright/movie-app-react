@@ -15,22 +15,22 @@ const Movie = ({poster, title, type, year, movieId}) => {
   }  
 return(
     <div>
-        <img className="movie-img" src={poster} alt={title}></img>
-        <h2 key = {movieId}>
-<Link className="movie-title" to={`/movieList/${movieId}`}>
-    {title}
- 
-    </Link></h2>
-    <button className = 'fav'>
+      <Link to={`/movieList/${movieId}`}>
+      <img className="movie-img" src={poster} alt={title}></img>
+      </Link>
 
-        
- <i onClick={colorHandler}
-   className= 
-   {`fas fa-heart-circle-plus${color ?
+        <h2 key = {movieId}>
+        <Link className="movie-title" to={`/movieList/${movieId}`}>
+        {title}
+        </Link></h2>
+
+    <button className = 'fav'>
+    <i onClick={colorHandler}
+    className= 
+    {`fas fa-heart-circle-plus${color ?
     'fas fa-heart-circle-check':
-     'fas fa-heart-circle-plus'}`}>
-         
-         </i></button>
+    'fas fa-heart-circle-plus'}`}>
+    </i></button>
    
        <h3 className="movie-year">{year}</h3>
 

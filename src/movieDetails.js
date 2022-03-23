@@ -10,6 +10,7 @@ const Item = () => {
     useEffect(()=> {
         fetchItem()
     },[])
+    const API_KEY = process.env.REACT_APP_API_KEY;
     
     const fetchItem = async () =>{
         const fetchMovie = await fetch(`https://www.omdbapi.com/?i=${params.id}&apikey=a7a37b5e&plot=full`)

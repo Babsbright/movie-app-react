@@ -14,7 +14,8 @@ const MovieList = () => {
     useEffect(() => {
     getMovies()
     }, [query])
- 
+ const API_KEY = process.env.REACT_APP_API_KEY;
+ console.log(API_KEY)
 //FUNCTIONS(get movies)
     const getMovies = async () => {
       try {
