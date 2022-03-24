@@ -19,7 +19,7 @@ const MovieList = () => {
 //FUNCTIONS(get movies)
     const getMovies = async () => {
       try {
-         const response = await fetch(`https://www.omdbapi.com/?apikey=a7a37b5e&s=${query}&plot=short`)
+         const response = await fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${query}&plot=short`)
          const data = await response.json()
          console.log(data.Search)
         setMovies(data.Search)

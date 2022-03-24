@@ -13,7 +13,7 @@ const Item = () => {
     const API_KEY = process.env.REACT_APP_API_KEY;
     
     const fetchItem = async () =>{
-        const fetchMovie = await fetch(`https://www.omdbapi.com/?i=${params.id}&apikey=a7a37b5e&plot=full`)
+        const fetchMovie = await fetch(`https://www.omdbapi.com/?i=${params.id}&apikey=${process.env.REACT_APP_API_KEY}&plot=full`)
         const response = await fetchMovie.json()
   
         setDetails(response)
